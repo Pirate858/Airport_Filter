@@ -1,6 +1,10 @@
 .table-container {
   margin: 1.5rem 0;
 
+  @media only screen and (max-device-width: 480px) {
+    margin: 0.5rem 0;
+  }
+
   .truncate-name {
     display: block;
     white-space: nowrap;

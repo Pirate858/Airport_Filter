@@ -6,4 +6,8 @@ $text-color: #635d5d;
   margin: auto;
   padding: 1.5rem;
   overflow: auto;
+
+  @media only screen and (max-device-width: 480px) {
+    padding: 1rem;
+  }
 }

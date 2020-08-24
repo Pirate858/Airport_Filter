@@ -7,7 +7,7 @@ const Table = () => {
   const { airportData, headerData } = state;
 
   return (
-    <div className="table-container">
+    <div className="table-container" style={{ overflowX: 'auto' }}>
       <table>
         <thead>
           <tr>

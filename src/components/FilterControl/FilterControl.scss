@@ -5,6 +5,11 @@
   grid-template-columns: 2fr 1fr;
   margin-top: 2rem;
 
+  @media only screen and (max-device-width: 480px) {
+    display: block;
+    margin-top: 0;
+  }
+
   .type-filter {
     display: flex;
     flex-direction: column;
@@ -14,6 +19,9 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     color: $main-dark;
+    @media only screen and (max-device-width: 480px) {
+      margin: 0.5rem 0;
+    }
   }
 
   .checkbox-container {
@@ -21,6 +29,11 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
+
+    @media only screen and (max-device-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .search-filter {
@@ -61,5 +74,9 @@
   }
   .checkbox-label {
     color: $text-color;
+
+    @media only screen and (max-device-width: 480px) {
+      width: 6rem;
+    }
   }
 }
