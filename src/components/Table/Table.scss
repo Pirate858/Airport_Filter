@@ -1,0 +1,45 @@
+.table-container {
+  margin: 1.5rem 0;
+
+  .truncate-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td {
+    width: 10em;
+    text-align: left;
+    padding: 1rem;
+    text-overflow: ellipsis;
+
+    .truncate-name {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  th {
+    text-align: left;
+    width: 10em;
+    padding: 1rem;
+    background-color: #e7e7e7;
+  }
+
+  tr {
+    max-height: 2em;
+
+    &:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+
+    &:nth-child(even) {
+      background-color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../pages/HomePage/HomePage.scss';
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .header {
+    color: $main-dark;
+    font-size: 3.8rem;
+    .inner-header {
+      color: $main-light;
+    }
+  }
+  .header-icon {
+    padding: 1rem 0;
+  }
+}

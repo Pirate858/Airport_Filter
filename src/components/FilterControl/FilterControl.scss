@@ -1,0 +1,65 @@
+@import '../../pages/HomePage/HomePage.scss';
+
+.filter-control-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2rem;
+
+  .type-filter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: $main-dark;
+  }
+
+  .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .search-filter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #filter-search-input {
+    width: inherit;
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+
+    &::placeholder {
+      color: rgba(87, 87, 86, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    &:hover,
+    &:focus {
+      padding: 8px 0;
+      outline: 0;
+      border: 1px solid transparent;
+      border-bottom: 1px solid #575756;
+      border-radius: 0;
+      background-position: 100% center;
+    }
+  }
+  .checkbox-label {
+    color: $text-color;
+  }
+}
